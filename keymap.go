@@ -131,9 +131,9 @@ func NewDefaultKeyMap() *KeyMap {
 		},
 		Text: TextKeyMap{
 			Prev:    key.NewBinding(key.WithKeys("shift+tab"), key.WithHelp("shift+tab", "back")),
-			Next:    key.NewBinding(key.WithKeys("tab", "enter"), key.WithHelp("enter", "next")),
-			Submit:  key.NewBinding(key.WithKeys("enter"), key.WithHelp("enter", "submit")),
-			NewLine: key.NewBinding(key.WithKeys("alt+enter", "ctrl+j"), key.WithHelp("alt+enter / ctrl+j", "new line")),
+			Next:    key.NewBinding(key.WithKeys("tab"), key.WithHelp("tab", "skip")),
+			Submit:  key.NewBinding(key.WithKeys("ctrl+x","ctrl+s"), key.WithHelp("ctrl+x / ctrl+s", "submit")),
+			NewLine: key.NewBinding(key.WithKeys("enter"), key.WithHelp("enter, "new line")),
 			Editor:  key.NewBinding(key.WithKeys("ctrl+e"), key.WithHelp("ctrl+e", "open editor")),
 		},
 		Select: SelectKeyMap{
@@ -172,7 +172,7 @@ func NewDefaultKeyMap() *KeyMap {
 		Note: NoteKeyMap{
 			Prev:   key.NewBinding(key.WithKeys("shift+tab"), key.WithHelp("shift+tab", "back")),
 			Next:   key.NewBinding(key.WithKeys("enter", "tab"), key.WithHelp("enter", "next")),
-			Submit: key.NewBinding(key.WithKeys("enter"), key.WithHelp("enter", "submit")),
+			// Submit: key.NewBinding(key.WithKeys("enter"), key.WithHelp("enter", "submit")),
 		},
 		Confirm: ConfirmKeyMap{
 			Prev:   key.NewBinding(key.WithKeys("shift+tab"), key.WithHelp("shift+tab", "back")),
