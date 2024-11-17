@@ -133,7 +133,7 @@ func NewDefaultKeyMap() *KeyMap {
 			Prev:    key.NewBinding(key.WithKeys("shift+tab"), key.WithHelp("shift+tab", "back")),
 			Next:    key.NewBinding(key.WithKeys("tab"), key.WithHelp("tab", "skip")),
 			Submit:  key.NewBinding(key.WithKeys("ctrl+x","ctrl+s"), key.WithHelp("ctrl+x / ctrl+s", "submit")),
-			NewLine: key.NewBinding(key.WithKeys("enter"), key.WithHelp("enter, "new line")),
+			NewLine: key.NewBinding(key.WithKeys("enter"), key.WithHelp("enter", "new line")),
 			Editor:  key.NewBinding(key.WithKeys("ctrl+e"), key.WithHelp("ctrl+e", "open editor")),
 		},
 		Select: SelectKeyMap{
